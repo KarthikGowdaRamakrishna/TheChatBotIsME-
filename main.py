@@ -15,10 +15,15 @@ import os
 
 load_dotenv()
 
-groq_api_key=os.environ['GROQ_API_KEY']
-
-if not groq_api_key:
-    groq_api_key=st.secrets['GROQ_API_KEY']
+# Try to get the GROQ_API_KEY from environment variables or Streamlit secrets
+try:
+    groq_api_key = os.environ['GROQ_API_KEY']
+except KeyError:
+    try:
+        groq_api_key = st.secrets['GROQ_API_KEY']
+    except KeyError:
+        st.error("GROQ_API_KEY not found. Please set it in your environment variables or Streamlit secrets.")
+        st.stop()
 
 loader = CSVLoader(file_path="NewMe.csv")
 documents = loader.load()
