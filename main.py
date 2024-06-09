@@ -15,13 +15,9 @@ import os
 
 load_dotenv()
 
-st.write("GROQ_API_KEY:", st.secrets["GROQ_API_KEY"])
-st.write(
-    "Has environment variables been set:",
-    os.environ["GROQ_API_KEY"] == st.secrets["GROQ_API_KEY"],
-)
 
-groq_api_key = os.environ['GROQ_API_KEY']
+
+groq_api_key = st.secrets['GROQ_API_KEY']
 
 # Try to get the GROQ_API_KEY from environment variables or Streamlit secrets
 # try:
