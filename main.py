@@ -15,7 +15,7 @@ import os
 groq_api_key=os.environ['GROQ_API_KEY']
 load_dotenv()
 
-loader = CSVLoader(file_path="NewME.csv")
+loader = CSVLoader(file_path="NewMe.csv")
 documents = loader.load()
 
 embeddings=HuggingFaceEmbeddings(model_name='sentence-transformers/all-MiniLM-L6-v2')
@@ -101,6 +101,10 @@ def main():
     col2.image("memoji.png", width=200)
     with open("resume.pdf", "rb") as file:
         col3.download_button(label="Download my Resume", data=file, file_name="resume.pdf", mime="application/pdf")
+   
+    portfolio_url = "https://karthikgowdaramakrishna.github.io/My_portfolio/"
+    st.markdown(f'<a href="{portfolio_url}" target="_blank"><button style="background-color: #4CAF50; color: white; padding: 10px 24px; border: none; border-radius: 4px; cursor: pointer;">Check out my Portfolio</button></a>', unsafe_allow_html=True)
+
 
     message = st.text_area("Hi, I am Karthik Gowda. Ask me any questions you want to know about me.")
 
