@@ -1,0 +1,126 @@
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment variables
+.env
+
+# Virtual environment
+venv/
+ENV/
+env/
+.venv/
+.ENV/
+.venv/
+ENV/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# IDE and editor settings
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Byte-compiled / optimized / DLL files
+*.py[cod]
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# MyPy
+.mypy_cache/
+
+# Pyre
+.pyre/
+
+# PyCharm
+#  JetBrains specific template, see https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
+.idea/
+.idea_modules/
+.idea_*
+.idea/assetWizard.xml
+.idea/dataSources.ids
+.idea/dataSources.xml
+.idea/dataSources.local.xml
+.idea/sqlDataSources.xml
+.idea/sqlDataSources.local.xml
+.idea/tasks.xml
+.idea/wsd_custom.xml
+.idea/wsd-remote-working-set.xml
+.idea/vcs.xml
+.idea/modules.xml
+.idea/modules
+.idea/dictionaries
+.idea/workspace.xml
+.idea/libraries/
+.idea/deployment.xml
+.idea/encodings.xml
+.idea/markdown-navigator.xml
+.idea/diff.xml
+.idea/vcs.xml
+.idea/name.xml
+.idea/svn.xml
+.idea/projectCodeStyles.xml
+.idea/.name
+
+# Coverage reports
+coverage.*
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# Environments
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# pyenv
+#   For a library or package, you might want to ignore these files since the code is
+#   intended to run in multiple environments; otherwise, check them in:
+# .python-version
+
+# VS Code
+.vscode/

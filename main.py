@@ -12,8 +12,13 @@ from dotenv import load_dotenv
 import os
 # import openai
 # openai.api_key = os.getenv("OPENAI_API_KEY")
-groq_api_key=os.environ['GROQ_API_KEY']
+
 load_dotenv()
+
+groq_api_key=os.environ['GROQ_API_KEY']
+
+if not groq_api_key:
+    groq_api_key=st.secrets['GROQ_API_KEY']
 
 loader = CSVLoader(file_path="NewMe.csv")
 documents = loader.load()
