@@ -113,8 +113,8 @@ def main():
     col1, col2, col3 = st.columns([1, 2, 1])
     col1.header("Get to know me")
     # col2.image("memoji.png", width=200)
-    with open("resume.pdf", "rb") as file:
-        col3.download_button(label="Download my Resume", data=file, file_name="resume.pdf", mime="application/pdf")
+    # with open("resume.pdf", "rb") as file:
+    #     col3.download_button(label="Download my Resume", data=file, file_name="resume.pdf", mime="application/pdf")
    
     portfolio_url = "https://karthikgowdaramakrishna.github.io/My_portfolio/"
     st.markdown(f'<a href="{portfolio_url}" target="_blank"><button style="background-color: #4CAF50; color: white; padding: 10px 24px; border: none; border-radius: 4px; cursor: pointer;">Check out my Portfolio</button></a>', unsafe_allow_html=True)
